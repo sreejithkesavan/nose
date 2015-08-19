@@ -89,7 +89,6 @@ class Coverage(Plugin):
                           dest="cover_xml_file",
                           metavar="FILE",
                           help="Produce XML coverage information in file")
-        # Add cmdline support for omiting coverage for specified file patterns.
         parser.add_option("--omit-cover", action="store",
                           default=env.get('NOSE_OMIT_COVER'),
                           dest="omit_cover",
